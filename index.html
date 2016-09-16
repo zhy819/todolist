@@ -34,6 +34,49 @@
       <!-- Configuration -->
       <script src="app/routes.js"></script>
       
-      <div ng-view></div>
+      
+      <!-- Body -->
+      
+      <!-- Top bar-->
+      <div class="page-header">
+      <div class="row">
+        <div  class="col-md-3" ></div>
+        <div  class="col-md-1" >
+            <h4>To-Do-List</h4>
+        </div>
+        <div  class="col-md-1" ></div>
+        <div  class="col-md-4" >
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </form>
+        </div>
+        <div  class="col-md-3" ></div>
+      </div>
+          
+      <div class="page-header">
+      
+      <div class="row">
+        <div  class="col-md-3" ></div>
+        <div  class="col-md-1" >
+            <h4>Tool bar</h4>
+        </div>
+        <div  class="col-md-5" >
+            <div ng-view></div>
+        </div>
+        <div  class="col-md-3" ></div>
+      </div>
+          
+      <!-- End Body -->       
   </body>
 </html>

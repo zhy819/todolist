@@ -1,5 +1,8 @@
 taskList.controller('TaskListController', ['$scope', function($scope){
     
+    // allow viewing multiple tasks
+    $scope.autoCloseOthers = false;
+    
     //test data
     $scope.undoTasks = [
         {

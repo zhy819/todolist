@@ -1,5 +1,10 @@
-<uib-accordion>
-    <div uib-accordion-group class="panel-default" heading="{{ t.name }}" ng-repeat="t in undoTasks">
-      {{ t.content }}
+<uib-accordion close-others = "autoCloseOthers">
+    <div uib-accordion-group class="panel-primary" heading="{{ t.name }}" ng-repeat="t in undoTasks">
+        <p>{{ t.content }}</p>
+        <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-1"><button type="button" class="btn btn-success">Done</button></div>
+            <div class="col-md-1"><button type="button" class="btn btn-danger">Remove</button></div>
+        </div>
     </div>
 </uib-accordion>

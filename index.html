@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app = "tdl">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do-List</title>
+      
+      
+    <!-- JS FILES -->
+    <script src = "assets/lib/angular.min.js"></script>  
+    <script src = "assets/lib/angular-route.min.js"></script>
+    <script src = "assets/lib/angular-sanitize.min.js"</script> 
+    <script src = "assets/lib/angular-animate.min.js"></script>
+    <script src = "assets/lib/angular-touch.min.js"></script>
+    <script src = "assets/lib/ui-bootstrap-tpls-2.1.3.min.js"></script>
+    <!-- END JS FILES -->
+      
+    <!-- CSS FILES -->
+    <link href = "assets/css/ui-bootstrap-2.1.3-csp.css" rel="stylesheet">
+    <!-- END CSS FILES -->
+      
+  </head>
+  <body>
+      
+      <!-- Modules -->
+      <script src="app/app.js"></script>
+      <script src="app/taskList/taskList.js"></script>
+      
+      <!-- Controllers -->
+      <script src="app/taskList/taskList.controller.js"></script>
+
+      <!-- Services -->
+      <script src="app/taskList/taskList.service.js"></script>
+     
+      <!-- Configuration -->
+      <script src="app/routes.js"></script>
+      
+      <div ng-view></div>
+  </body>
+</html>
